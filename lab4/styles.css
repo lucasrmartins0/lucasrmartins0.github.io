@@ -5,6 +5,7 @@
 
 body{
     background-color: #D3D3D3;
+    font-family: Arial,sans-serif;
 }
 header{
     text-align: center;
@@ -22,11 +23,9 @@ nav a{
     color: #ad3cee;
     text-align: center;
     text-decoration: none;
-    padding: 5px;
 }
 nav a:hover{
     color: rgb(218, 218, 218);
-    font-size: 15px;
 }
 main{
     background-color: #e6e6e6;
@@ -38,6 +37,7 @@ footer {
     padding: 20px;
     background-color: #585656;
     color: #ad3cee;
+    display: grid;
 }
 footer a{
     text-align: center;
@@ -71,19 +71,19 @@ a{
     padding: 10px;
 }
 #fotografias{
-    background-color: #e4e4e4;
+    background-color: #D3D3D3;
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
 }
 #video{
-    background-color: #e4e4e4;
+    background-color: #D3D3D3;
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
 }
 #poema{
-    background-color: #e4e4e4;
+    background-color: #D3D3D3;
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
@@ -114,3 +114,50 @@ label, input {
     padding: 5px;
     margin: 5px;
 }
+
+.main-header{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #D3D3D3;
+    margin: 8px;
+}
+.main-header p {
+    margin-top: 10px;
+}
+.main-header a {
+    margin-top: 10px;
+}
+
+.main-header a:hover {
+    color: #585656;
+}
+
+.poema p {
+    font-family: 'Cursive', sans-serif;
+    font-size: 24px;
+    color: #FF6347; 
+    text-shadow: 2px 2px 8px #FFD700; 
+    line-height: 1.8;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: rotate(-2deg); 
+}
+.poema p:nth-child(2) {
+    font-size: 22px;
+    color: #0354ec; 
+    transform: rotate(2deg); 
+    animation: color-change 5s infinite alternate; 
+}
+@keyframes color-change {
+    0% {
+        color: #890bef; 
+    }
+    100% {
+        color: #1E90FF; 
+    }
+}
+
+.ul-info{
+    list-style-type: none;
+}
+
