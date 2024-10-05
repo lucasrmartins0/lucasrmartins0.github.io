@@ -118,6 +118,7 @@ label, input {
     margin: 5px;
 }
 
+
 .main-header{
     padding: 8px;
     border-radius: 5px;
@@ -162,5 +163,35 @@ label, input {
 
 .ul-info{
     list-style-type: none;
+}
+
+.info-info{
+    background-color: #D3D3D3;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 8px;
+}
+.curiosidades{
+    background-color: #D3D3D3;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+.info-table{
+    background-color: #D3D3D3;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+table {
+    border: 2px solid#ad3cee;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid#ad3cee;
+    padding: 8px;
 }
 
