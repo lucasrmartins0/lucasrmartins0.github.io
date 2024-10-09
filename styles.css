@@ -1,6 +1,9 @@
 body {
     background-color: white;
 }
+.main-page{
+    background-color: rgb(199, 181, 217);
+}
 nav ul {
     list-style: none;
     padding: 0;
