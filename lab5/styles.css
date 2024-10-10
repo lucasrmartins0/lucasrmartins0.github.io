@@ -45,8 +45,8 @@ footer {
     background-color: #585656;
     color: #ad3cee;
     width: 100%;
-    bottom: 0;
-    position: fixed;
+    /* bottom: 0;
+    position: fixed; */
 }
 
 footer a{
@@ -203,33 +203,47 @@ th, td {
 }
 
 #Restaurantes {
-    background-color: #0354ec;
+    background-color: #D3D3D3;
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
 }
 #Monomentos {
-    background-color: #0354ec;
+    background-color: #D3D3D3;
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
 }
 #Locais {
-    background-color: #0354ec;
+    background-color: #D3D3D3;
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
 }
 #LocalFoto {
-    background-color: #0354ec;
+    background-color: #D3D3D3;
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
 }
 #Visitar {
-    background-color: #0354ec;
+    background-color: #D3D3D3;
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
 }
-
+#Restaurantes h3, #Monomentos h3, #Locais h3, #LocalFoto h3, #Visitar h3 {
+    color: #ad3cee;
+    font-size: 24px;
+    border-bottom: 2px solid #ad3cee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.main-header a{
+    text-align: center;
+}
+.maindiv-pontos ul{
+    list-style: none;
+    padding: 5px;
+}
