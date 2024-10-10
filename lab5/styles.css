@@ -9,6 +9,7 @@
 body{
     background-color: #D3D3D3;
     font-family: Arial,sans-serif;
+    height: 100%;
 }
 header{
     text-align: center;
@@ -44,6 +45,8 @@ footer {
     background-color: #585656;
     color: #ad3cee;
     width: 100%;
+    bottom: 0;
+    position: fixed;
 }
 
 footer a{
@@ -199,5 +202,34 @@ th, td {
     padding: 8px;
 }
 
-
+#Restaurantes {
+    background-color: #0354ec;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 8px;
+}
+#Monomentos {
+    background-color: #0354ec;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 8px;
+}
+#Locais {
+    background-color: #0354ec;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 8px;
+}
+#LocalFoto {
+    background-color: #0354ec;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 8px;
+}
+#Visitar {
+    background-color: #0354ec;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 8px;
+}
 

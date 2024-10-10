@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quizz</title>
+</head>
+
+<body>
+    <header>
+        <h1>Singapura</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="info.html">Informações</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="viagem.html">Viagem</a>
+            <a href="pontosdeinteresse.html">Pontos de Interesse</a>
+
+        </nav>
+        <br>
+        <img src="images/singapore.webp" alt="Singapore" width="450px" height="250px">
+    </header>
+    <main>
+        <h2>Quizz</h1>
+            <form method="get" action="https://postman-echo.com/get">
+
+                <fieldset>
+                    <legend>Inserir Dados</legend>
+                    <p>Nome: <input type="text" placeholder="Inserir nome" name="nome" autocomplete="on" size="30" required></p>
+                    <p>Apelido: <input type="text" placeholder="Inserir Apelido" name="apelido" autocomplete="on" size="30"></p>
+                    <p>Email: <input type="email" placeholder="Inserir email" name="email" maxlength="50" required></p>
+                    <p><input type="submit" name="" id=""></p>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Em que país se situa Singapura?</legend>
+                    <label for="capital">Digite ou selecione o país:</label>
+                    <input type="text" id="capital" name="capital" list="país" placeholder="Digite o país" autocomplete="off" size="30" required>
+                    <datalist id="país">
+                        <option value="Singapura">
+                        <option value="Estados Unidos">
+                        <option value="França">
+                        <option value="Portugal">
+                    </datalist>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Qual é o prato típico mais famoso de Singapura?</legend>
+                    <label for="prato">Selecione o prato típico:</label>
+                    <select id="prato" name="prato" required autofocus>
+                        <option value="Hainanese Chicken Rice">Hainanese Chicken Rice</option>
+                        <option value="Chilli Crab">Chilli Crab</option>
+                        <option value="Laksa">Laksa</option>
+                        <option value="Satay">Satay</option>
+                    </select>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>O que você mais gostaria de visitar em Singapura?</legend>
+                    <label for="visitar">Descreva sua atração favorita:</label>
+                    <textarea id="visitar" name="visitar" placeholder="Escreva aqui sua resposta..." maxlength="200"></textarea>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Qual é o símbolo nacional de Singapura?</legend>
+                    <label><input type="radio" name="simbolo" value="Merlion" required> Merlion</label>
+                    <label><input type="radio" name="simbolo" value="Dragão"> Dragão</label>
+                    <label><input type="radio" name="simbolo" value="Leão"> Leão</label>
+                    <label><input type="radio" name="simbolo" value="Tigre"> Tigre</label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Quais são idiomas oficiais de Singapura? (Selecione todos os que aplicam)</legend>
+                    <label><input type="checkbox" name="idiomas" value="Inglês" required> Inglês</label>
+                    <label><input type="checkbox" name="idiomas" value="Mandarim"> Mandarim</label>
+                    <label><input type="checkbox" name="idiomas" value="Tâmil"> Tâmil</label>
+                    <label><input type="checkbox" name="idiomas" value="Malaio"> Malaio</label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Quando Singapura se tornou independente?</legend>
+                    <label for="independencia">Selecione a data de independência:</label>
+                    <input type="date" id="independencia" name="independencia" required>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Que horas começa o show de luzes no Marina Bay Sands?</legend>
+                    <label for="show-luzes">Selecione o horário:</label>
+                    <input type="time" id="show-luzes" name="show-luzes" required>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Qual é a cor da bandeira de Singapura?</legend>
+                    <label for="cor-bandeira">Escolha a cor predominante da bandeira:</label>
+                    <input type="color" id="cor-bandeira" name="cor-bandeira" value="#FF0000" form="quiz-singapura" required>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Quanta é aproxidamente a população de Singapura?</legend>
+                    <label for="ilhas">Digite a quantidade de população:</label>
+                    <input type="number" id="ilhas" name="ilhas" min="1" max="100" step="1" value="5000000" size="5" required>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Qual o nível de desenvolvimento de Singapura (0 a 100)?</legend>
+                    <label for="desenvolvimento">Ajuste o nível:</label>
+                    <input type="range" id="desenvolvimento" name="desenvolvimento" min="0" max="100" value="90" required>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Em que imagem aparece Singapura?</legend>
+                    <div class="img-btn">
+                        <label for="img1">
+                            <input type="radio" id="img1" name="imagem-singapura" value="img1">
+                            <img src="images/paris.jpg" alt="Imagem 1" width="100" height="55">
+                        </label>
+                        <label for="img2">
+                            <input type="radio" id="img2" name="imagem-singapura" value="img2" required>
+                            <img src="images/singapore.jpg" alt="Imagem 2" width="100" height="55">
+                        </label>
+                        <label for="img3">
+                            <input type="radio" id="img3" name="imagem-singapura" value="img3">
+                            <img src="images/ny.jpg" alt="Imagem 3" width="100" height="55">
+                        </label>
+                    </div>
+                </fieldset>
+            
+                <p>
+                    <button type="submit">Enviar Quiz</button>
+                    <button type="reset">Resetar Quiz</button>
+                </p>
+            
+            </form>
+    </main>
+
+    <footer>
+        <p> <a href="/index.html">Página Pricipal</a> </p>        <!-- <a href="javascript:history.back()" class="back-arrow">&larr;</a> -> Back arrow -->
+    </footer>
+
+</body>
+
+</html>
