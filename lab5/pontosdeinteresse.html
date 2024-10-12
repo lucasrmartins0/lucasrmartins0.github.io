@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Singapura</title>
+    <title>Pontos de Interesse</title>
 </head>
 
 <body>
     <header>
+        <div class="titulo-cidade">
         <h1>Singapura</h1>
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="local.html">Localização</a>
@@ -19,80 +21,108 @@
             <a href="quizz.html">Quizz</a>
             <a href="viagem.html">Viagem</a>
             <a href="pontosdeinteresse.html">Pontos de Interesse</a>
+            <a href="capitais.html">Capitais</a>
 
         </nav>
         <img src="images/singapore.webp" alt="Singapore" width="450px" height="250px">
     </header>
     <main>
         <div class="maindiv-pontos">
-        <div class="main-header">
-            <h2>Pontos de Interesse</h2>
-            <p>
-                <a href="#Restaurantes">Top 5 Restaurantes</a>
-                <a href="#Monomentos">Top 5 Monomentos</a>
-                <a href="#Locais">Locais a não perder</a>
-                <a href="#LocalFoto">Melhor local para tirar uma foto</a>
-                <a href="#Visitar">Melhor altura para visitar</a>
-            </p>
+            <div class="main-header">
+                <h2>Pontos de Interesse</h2>
+                <p>
+                    <a href="#Restaurantes">Top 5 Restaurantes</a>
+                    <a href="#Monomentos">Top 5 Monomentos</a>
+                    <a href="#Locais">Locais a não perder</a>
+                    <a href="#LocalFoto">Melhor local para tirar uma foto</a>
+                    <a href="#Visitar">Melhor altura para visitar</a>
+                </p>
+            </div>
+
+            <section id="Restaurantes">
+                <div class="restaurantes">
+                    <h3>Top 5 Restaurantes</h3>
+                    <ul>
+                        <li>Odette</li>
+                        <li>Burnt Ends</li>
+                        <li>Candlenut</li>
+                        <li>Labyrinth</li>
+                        <li>Les Amis</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="Monomentos">
+                <div class="monomentos">
+                    <h3 id="monomentos">Top 5 Monomentos</h3>
+                    <ul >
+                        <li>Marina Bay Sands & Supertree Grove (Gardens by the Bay)</li>
+                        <li>Merlion Park</li>
+                        <li>Chinatown e o Templo de Buda Dente</li>
+                        <li>Raffles Hotel</li>
+                        <li>Sri Mariamman Temple</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="Locais">
+                <div class="locais" >
+                    <h3 id="locais">Locais a não perder</h3>
+                    <ul >
+                        <li>Haji Lane</li>
+                        <li>Clarke Quay</li>
+                        <li>East Coast Park</li>
+                        <li>Helix Bridge</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="LocalFoto">
+                <div>
+                    <h3 id="foto">Melhor local para tirar uma foto</h3>
+                    <ul>
+                        <li>
+                            <h4>Marina Bay</h4>
+                        </li>
+                        <iframe class="iframe-marina" width="550" height="350"
+                            src="https://www.youtube.com/embed/KYo6lUn25gs?si=ajNwPKxqhQbnrNnI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </ul>
+                </div>
+            </section>
+            <section id="Visitar">
+                <div>
+                    <h3 id="visitar">Melhor altura para visitar</h3>
+
+                    <table border="1" class="altura-visitar">
+                        <thead>
+                            <tr>
+                                <th>Tópico</th>
+                                <th>Detalhes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Melhor altura para visitar</td>
+                                <td>De fevereiro a abril, com clima mais seco e temperaturas amenas.</td>
+                            </tr>
+                            <tr>
+                                <td>Clima geral</td>
+                                <td>Agradável durante todo o ano, mas de novembro a janeiro há época de monções com
+                                    chuvas mais frequentes.</td>
+                            </tr>
+                            <tr>
+                                <td>Eventos culturais</td>
+                                <td>O Ano Novo Chinês, em janeiro ou fevereiro, adiciona uma experiência cultural
+                                    enriquecedora.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </div>
-
-        <section id="Restaurantes">
-            <div class="restaurante">
-                <h3>Top 5 Restaurantes</h3>
-                <ul>
-                    <li>Odette</li>
-                    <li>Burnt Ends</li>
-                    <li>Candlenut</li>
-                    <li>Labyrinth</li>
-                    <li>Les Amis</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="Monomentos">
-            <div>
-                <h3 id="monomentos">Top 5 Monomentos</h3>
-                <ul>
-                    <li>Marina Bay Sands & Supertree Grove (Gardens by the Bay)</li>
-                    <li>Merlion Park</li>
-                    <li>Chinatown e o Templo de Buda Dente</li>
-                    <li>Raffles Hotel</li>
-                    <li>Sri Mariamman Temple</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="Locais">
-            <div>
-                <h3 id="locais">Locais a não perder</h3>
-                <ul>
-                    <li>Haji Lane</li>
-                    <li>Clarke Quay</li>
-                    <li>East Coast Park</li>
-                    <li>Helix Bridge</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="LocalFoto">
-            <div>
-                <h3 id="foto">Melhor local para tirar uma foto</h3>
-                <ul>
-                    <li>Haji Lane</li>
-                    <li>Sentosa Island & Palawan Beach</li>
-                </ul>
-            </div>
-        </section>
-        <section id="Visitar">
-            <div>
-                <h3 id="visitar">Melhor altura para visitar</h3>
-                <p>A melhor época para visitar Singapura é entre fevereiro e abril,
-                    com clima mais seco e temperaturas amenas. Embora seja agradável durante todo o ano,
-                    de novembro a janeiro ocorre a temporada de monções, com chuvas mais frequentes.
-                    Eventos como o Ano Novo Chinês, em janeiro ou fevereiro, enriquecem a experiência cultural.</p>
-            </div>
-        </section>
-    </div>
     </main>
     <footer>
         <p> <a href="/index.html">Página Pricipal</a> </p>

@@ -238,7 +238,10 @@ th, td {
     border-bottom: 2px solid #ad3cee;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+#LocalFoto ul{
+    text-align: center;
 }
 .main-header a{
     text-align: center;
@@ -246,4 +249,68 @@ th, td {
 .maindiv-pontos ul{
     list-style: none;
     padding: 5px;
+}
+
+.altura-visitar {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.altura-visitar th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.altura-visitar th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.altura-visitar tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.altura-visitar tr:hover {
+    background-color: #ad3cee;
+    color: white;
+}
+
+.iframe-marina{
+    border: 3px solid black;
+}
+.restaurantes ul {
+    list-style-type: square;
+    padding-left: 40px;
+}
+.monomentos ul {
+    list-style-type: circle;
+    padding-left: 40px;
+}
+.locais ul {
+    list-style-type: armenian;
+    padding-left: 40px;
+}
+.locais ul li {
+    list-style-type: armenian;
+    padding-left: 20px;
+    font-size: 2em;
+}
+.restaurantes ul li {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 2em;
+}
+.monomentos ul li {
+    list-style-type: circle;
+    padding-left: 20px;
+    font-size: 2em;
+}
+
+.titulo-cidade{
+    text-transform: uppercase;
+    font-size: 30px;
 }
