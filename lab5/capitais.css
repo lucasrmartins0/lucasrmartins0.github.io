@@ -6,23 +6,60 @@
     padding: 0;
     margin: 0;
 }
-
-
+body{
+    overflow-x: hidden;
+}
 header,
 main,
 article {
-    /* centrando o texto */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+    /* font-size: 2em; */
 }
 
 header {
+    width: 100vw;
     background: red;
-    position: sticky;
+    position: absolute;
     height: 10vh;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    color: white;
+    padding: 30px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 30px;
+}
+nav a{
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: black;
+}
+nav a:active{
+    color: aqua;
+}
+nav li:last-child{
+    border-radius: 5px;
+}
+nav li:last-child a{
+    color: black;
+    background-color: rgb(222, 209, 209);
+    padding: 5px;
+    border-radius: 5px;
+}
+nav li:last-child a:hover{
+    color: purple;
 }
 
 main {
@@ -31,7 +68,8 @@ main {
 }
 
 article {
-    height: 100vh;
+    height: 50vh;
+    width: 100vw;
     background: orange;
 }
 
@@ -39,4 +77,31 @@ article:last-child {
     height: 100vh;
     background: black;
     color: white;
+}
+.poema{
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.poema i{
+    font-style: italic;
+    font-weight: 100;
+    
+}
+
+#paisagem img{
+    width: 67vw;
+    height: 98vh;
+}
+.div-view{
+    position: absolute;
+}
+.div-view p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
 }
