@@ -6,12 +6,9 @@
     padding: 0;
     margin: 0;
 }
-body{
-    overflow-x: hidden;
-}
+
 header,
-main,
-article {
+main, article{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,10 +16,10 @@ article {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     background: red;
-    position: absolute;
-    height: 10vh;
+    position: sticky;
+    height: auto;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -62,46 +59,124 @@ nav li:last-child a:hover{
     color: purple;
 }
 
-main {
-    height: 90vh;
-    background: purple;
+article#poema{
+    height: 500px;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    background-color: aqua;
 }
-
-article {
-    height: 50vh;
-    width: 100vw;
-    background: orange;
-}
-
-article:last-child {
-    height: 100vh;
-    background: black;
-    color: white;
-}
-.poema{
+.poema p:last-of-type {
     font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-.poema i{
-    font-style: italic;
-    font-weight: 100;
-    
 }
 
-#paisagem img{
-    width: 67vw;
-    height: 98vh;
+#paisagem{
+    background-color: red;
 }
-.div-view{
-    position: absolute;
+.div-view {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    max-height: 100vh;
+    overflow: hidden;
 }
+.div-view img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.div-view p a {
+    color: white;
+    text-decoration: none;
+}
+
+.div-view p a:hover {
+    text-decoration: underline;
+}
+
 .div-view p {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 20px;
     padding: 5px;
     color: white;
     font-size: 20px;
     font-weight: 400;
     margin: 0;
+} 
+article#cidades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5vw;
+    background: rgb(161, 161, 161);
+  }
+
+  #cidades section {
+    display: flex;
+    margin: 10px;
+  }
+
+  #cidades img {
+    box-shadow: 5px 2px 2px gray;
+    width: 100px;
+    height: 80px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  #cidades div {
+    box-shadow: 5px 2px 2px gray;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 80px;
+    border-radius: 0 20px 20px 0;
+    background: rgb(255, 255, 255);
+  }
+  #experimenta {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center; 
+    height: 500px; 
+}
+.div1, .div2, .div3 {
+    margin: 10px;
+    padding: 20px;
+    background-color: lightblue;
+    border: 1px solid #000;
+}
+
+.div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+.div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+.div2:hover{
+    background-color: green;
+    background-image: url(images/portugal.jpg);
+}
+.div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
 }
