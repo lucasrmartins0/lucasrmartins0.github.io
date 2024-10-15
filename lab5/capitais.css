@@ -67,10 +67,31 @@ article#poema{
     display: flex;
     justify-content: column;
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(108, 106, 106);
+  
+}
+.poema {
+    height: 250px;
+    background-image: url(images/fpjpg.jpg);
+    opacity: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: #939393;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    box-shadow: 3px;
+    padding: 20px
+
 }
 .poema p:last-of-type {
-    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    font-weight: 50;
+    justify-content: center;
+    align-items: center;
 }
 
 #paisagem{
@@ -113,7 +134,7 @@ article#cidades {
     flex-wrap: wrap;
     justify-content: center;
     padding: 5vw;
-    background: rgb(161, 161, 161);
+    background-color: rgb(161, 161, 161);
   }
 
   #cidades section {
