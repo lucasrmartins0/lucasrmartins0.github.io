@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: "Merriweather", serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header,
+main, article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 2em; */
+}
+article{
+    margin-top: 100px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background: rgb(63, 61, 61);
+    position: fixed;
+    height: auto;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0  0 7px 7px ;
+}
+header h1{
+    color: white;
+    padding: 30px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 30px;
+}
+nav a{
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: black;
+}
+nav a:active{
+    color: aqua;
+}
+nav li:last-child{
+    border-radius: 5px;
+}
+nav li:last-child a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(53, 53, 53);
+    padding: 8px;
+    border-radius: 5px;
+}
+nav li:last-child a:hover{
+    color: rgb(203, 198, 203);
+}
+
+article#poema{
+    height: 800px;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    background-color: rgb(132, 132, 132);
+  
+}
+.poema {
+    height: 330px;
+    background-image:  url(images/fpjpg.jpg);
+    opacity: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: #a9a9a9;
+    border-radius: 8px;
+    box-shadow: 5px 2px 2px gray;
+    padding: 20px
+}
+
+.poema p{
+    color:white;
+    opacity: 100%;
+}
+
+.poema p:last-of-type {
+    color: white;
+    opacity: 100%;
+    padding: 5px;
+    display: flex;
+    font-weight: 50;
+    justify-content: center;
+    align-items: center;
+}
+
+#paisagem{
+    background-color: red;
+}
+.div-view {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.div-view img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.div-view p a {
+    color: white;
+    text-decoration: none;
+}
+
+.div-view p a:hover {
+    text-decoration: underline;
+}
+
+.div-view p {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+} 
+article#cidades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5vw;
+    background-color: rgb(161, 161, 161);
+  }
+
+  #cidades section {
+    display: flex;
+    margin: 10px;
+  }
+
+  #cidades img {
+    box-shadow: 5px 2px 2px gray;
+    width: 100px;
+    height: 80px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  #cidades div {
+    box-shadow: 5px 2px 2px gray;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 80px;
+    border-radius: 0 20px 20px 0;
+    background: rgb(255, 255, 255);
+  }
+  #experimenta {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center; 
+    height: 500px; 
+}
+.div1, .div2, .div3 {
+    margin: 10px;
+    padding: 20px;
+    background-color: lightblue;
+    border: 1px solid #000;
+}
+
+.div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    
+}
+.div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+.div2:hover{
+    background-color: green;
+    
+}
+.div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
