@@ -24,15 +24,17 @@ header {
 header h1 {
     font-size: 30px;
     padding: 20px;
-    background-color: #ad3cee;
+    background-color: #860dcc;
     color: rgb(218, 218, 218);
 }
 
-header img {
-    padding: 10px
+.img-below-header img {
+    width: 100%;
 }
 
 nav {
+    display: flex;
+    justify-content: center;
     color: white;
     padding: 30px;
     background-color: #585656;
@@ -40,12 +42,13 @@ nav {
 
 nav a {
     padding: 15px;
-    color: white;
+    color: #860dcc;
     text-align: center;
     font-size: 18px;
 }
-nav a i{
-    color:white;
+
+nav a i {
+    color: white;
 }
 
 nav a:link {
@@ -53,7 +56,7 @@ nav a:link {
 }
 
 nav a:visited {
-    color: rgb(104, 204, 241);
+    color: white;
 }
 
 nav a:hover {
@@ -63,9 +66,7 @@ nav a:hover {
 nav a:active {
     color: red;
 }
-/* nav a[href = "index.html"]::before {
-    content: "\f015";
-} */
+
 
 main {
     background-color: #e6e6e6;
