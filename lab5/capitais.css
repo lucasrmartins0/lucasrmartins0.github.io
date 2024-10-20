@@ -29,7 +29,7 @@ article{
 
 header {
     width: 100%;
-    background: rgb(63, 61, 61);
+    background-color: rgb(63, 61, 61);
     position: fixed;
     height: auto;
     top: 0;
@@ -42,6 +42,26 @@ header {
 header h1{
     color: white;
     padding: 30px;
+}
+footer {
+    padding: 20px;
+    background-color: rgb(63, 61, 61);
+    color: #ad3cee;
+    width: 100%;
+    /* bottom: 0;
+    position: fixed; */
+}
+
+footer a {
+    text-align: center;
+    color: rgb(218, 218, 218);
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer a:hover {
+    color: black;
 }
 
 nav ul{
@@ -183,28 +203,41 @@ article#cidades {
   }
   #experimenta {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center; 
-    height: 500px; 
+    align-items: center;
+    height: 500px;
+    background-color: #585656;
 }
-.div1, .div2, .div3 {
+
+.div1,
+.div2,
+.div3 {
     margin: 10px;
     padding: 20px;
-    background-color: lightblue;
     border: 1px solid #000;
 }
 
-.div1{
+.div1 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 300px;
     height: 300px;
     border-radius: 200px;
-    
+    visibility: hidden;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    visibility: visible;
 }
-.div2{
+.div1:hover{
+    font-size: 15px;
+}
+.div1:hover+.div2+.div3 {
+    visibility: visible;
+}
+.div2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,15 +246,30 @@ article#cidades {
     height: 300px;
     border-radius: 200px;
 }
-.div2:hover{
+
+.div2:hover {
     background-color: green;
-    
+
 }
-.div3{
+
+.div3 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 300px;
     height: 300px;
     border-radius: 200px;
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}
+
+.div3:hover {
+    visibility: visible;
+    font-size: 20px;
+}
+
+.div3:hover+.div1 {
+    visibility: visible;
 }

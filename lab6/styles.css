@@ -34,7 +34,7 @@ header h1 {
 
 .img-below-header img {
     width: 100%;
-    border-radius:0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
 }
 
 nav {
@@ -403,4 +403,22 @@ td {
 
 .fotografias-content a {
     cursor: zoom-in;
+}
+
+.content-video {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    gap: 10px;
+}
+
+#Video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-height: 100%;
 }

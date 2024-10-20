@@ -9,18 +9,21 @@
     margin: 0;
     font-family: "Merriweather", serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
 header,
-main, article{
+main,
+article {
     display: flex;
     justify-content: center;
     align-items: center;
     /* font-size: 2em; */
 }
-article{
+
+article {
     margin-top: 100px;
     margin: 0;
     padding: 0;
@@ -37,56 +40,85 @@ header {
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 0  0 7px 7px ;
+    border-radius: 0 0 7px 7px;
 }
-header h1{
+
+header h1 {
     color: white;
     padding: 30px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     padding: 30px;
 }
-nav a{
+
+footer {
+    padding: 20px;
+    background-color: rgb(63, 61, 61);
+    color: #ad3cee;
+    width: 100%;
+    /* bottom: 0;
+    position: fixed; */
+}
+
+footer a {
+    text-align: center;
+    color: rgb(218, 218, 218);
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer a:hover {
+    color: black;
+}
+
+nav a {
     padding: 30px;
     text-decoration: none;
     color: white;
 }
-nav a:hover{
+
+nav a:hover {
     color: black;
 }
-nav a:active{
+
+nav a:active {
     color: aqua;
 }
-nav li:last-child{
+
+nav li:last-child {
     border-radius: 5px;
 }
-nav li:last-child a{
+
+nav li:last-child a {
     color: rgb(255, 255, 255);
     background-color: rgb(53, 53, 53);
     padding: 8px;
     border-radius: 5px;
 }
-nav li:last-child a:hover{
+
+nav li:last-child a:hover {
     color: rgb(203, 198, 203);
 }
 
-article#poema{
+article#poema {
     padding-top: 40px;
     height: 800px;
     display: flex;
     justify-content: column;
     align-items: center;
     background-color: rgb(132, 132, 132);
-  
+
 }
+
 .poema {
     height: 500px;
     width: 350px;
-    background-image:  url(images/fpjpg.jpg);
+    background-image: url(images/fpjpg.jpg);
     opacity: 70%;
     display: flex;
     flex-direction: column;
@@ -99,8 +131,8 @@ article#poema{
     padding: 20px
 }
 
-.poema p{
-    color:white;
+.poema p {
+    color: white;
     opacity: 100%;
 }
 
@@ -114,9 +146,10 @@ article#poema{
     align-items: center;
 }
 
-#paisagem{
+#paisagem {
     background-color: red;
 }
+
 .div-view {
     position: relative;
     width: 100%;
@@ -124,11 +157,13 @@ article#poema{
     max-height: 100vh;
     overflow: hidden;
 }
+
 .div-view img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
 }
+
 .div-view p a {
     color: white;
     text-decoration: none;
@@ -147,7 +182,8 @@ article#poema{
     font-size: 20px;
     font-weight: 400;
     margin: 0;
-} 
+}
+
 article#cidades {
     display: flex;
     flex-direction: row;
@@ -155,21 +191,21 @@ article#cidades {
     justify-content: center;
     padding: 5vw;
     background-color: rgb(161, 161, 161);
-  }
+}
 
-  #cidades section {
+#cidades section {
     display: flex;
     margin: 10px;
-  }
+}
 
-  #cidades img {
+#cidades img {
     box-shadow: 5px 2px 2px gray;
     width: 100px;
     height: 80px;
     border-radius: 20px 0 0 20px;
-  }
+}
 
-  #cidades div {
+#cidades div {
     box-shadow: 5px 2px 2px gray;
     color: black;
     display: flex;
@@ -179,31 +215,45 @@ article#cidades {
     height: 80px;
     border-radius: 0 20px 20px 0;
     background: rgb(255, 255, 255);
-  }
-  #experimenta {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-around;
-    align-items: center; 
-    height: 500px; 
 }
-.div1, .div2, .div3 {
+
+#experimenta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    background-color: #585656;
+}
+
+.div1,
+.div2,
+.div3 {
     margin: 10px;
     padding: 20px;
-    background-color: lightblue;
     border: 1px solid #000;
 }
 
-.div1{
+.div1 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 300px;
     height: 300px;
     border-radius: 200px;
-    
+    visibility: hidden;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    visibility: visible;
 }
-.div2{
+.div1:hover{
+    font-size: 15px;
+}
+.div1:hover+.div2+.div3 {
+    visibility: visible;
+}
+.div2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,17 +262,43 @@ article#cidades {
     height: 300px;
     border-radius: 200px;
 }
-.div2:hover{
+
+.div2:hover {
     background-color: green;
-    
+
 }
-.div3{
+
+.div3 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 300px;
     height: 300px;
     border-radius: 200px;
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    font-size: 40px;
 }
 
+.div3:hover {
+    visibility: visible;
+    font-size: 20px;
+}
 
+.div3:hover+.div1 {
+    visibility: visible;
+}
+
+.parallax {
+    background-image: url(images/benficaaaaa.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax img {
+    width: 100vw;
+}
