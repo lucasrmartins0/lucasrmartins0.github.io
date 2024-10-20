@@ -18,7 +18,7 @@
             'header header header header'
             'nav nav nav nav'
             'div div div div'
-            'main main main aside'
+            'main main main main'
             'footer footer footer footer';
     }
 
@@ -79,7 +79,7 @@
     display: none;
     position: absolute;
     background-color: #575757;
-    min-width: 160px;
+    /* min-width: 160px; */
 }
 .dropdown .dropbtn {
     font-size: 16px;  
@@ -96,7 +96,7 @@
     display: none;
     position: absolute;
     background-color: #575757;
-    min-width: 160px;
+    /* min-width: 160px; */
 
 }
 

@@ -422,3 +422,34 @@ td {
     width: 100vw;
     max-height: 100%;
 }
+
+/* ANIMAÇAO HOME PAGE */
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    animation: slideDown 1.5s ease-out;
+}
+
+@keyframes footerFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer p {
+    animation: footerFadeIn 2s ease-out;
+    opacity: 0;
+}
