@@ -436,6 +436,13 @@ td {
     max-height: 100%;
 }
 
+#video iframe{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid gray;
+}
+
+
 /* ANIMAÇAO HOME PAGE */
 
 @keyframes slideDown {

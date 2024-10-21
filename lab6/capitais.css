@@ -223,7 +223,7 @@ article#cidades {
     justify-content: space-around;
     align-items: center;
     height: 500px;
-    background-color: #585656;
+    background-color: #7a7a7a;
 }
 
 .div1,
@@ -308,7 +308,7 @@ article#cidades {
 
 .animationpics {
     padding: 40px;
-    background-color: rgb(148, 148, 250);
+    background-color: rgb(115, 115, 118);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

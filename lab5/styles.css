@@ -125,6 +125,7 @@ a {
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
+    text-align: center;
 }
 
 #video {
@@ -132,6 +133,11 @@ a {
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
+}
+#video iframe{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid gray;
 }
 
 #poema {
@@ -388,6 +394,7 @@ td {
 
 .fotografias-content a {
     cursor: zoom-in;
+    
 }
 
 .location-map {
