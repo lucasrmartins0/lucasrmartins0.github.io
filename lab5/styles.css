@@ -35,9 +35,11 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: white;
     padding: 30px;
     background-color: #585656;
+    height: 25px;
 }
 
 nav a {
@@ -119,7 +121,6 @@ a {
 #fotografias p {
     padding: 10px;
 }
-
 #fotografias {
     background-color: #D3D3D3;
     padding: 8px;
