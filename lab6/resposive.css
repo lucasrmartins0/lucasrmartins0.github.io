@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-@media (min-width:601px) {
+
+/* @media (min-width:601px) {
     body {
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
         display: grid;
         width: 100vw;
         height: 100vh;
@@ -23,21 +24,21 @@
     }
 
     header {
-        /* background-color: blueviolet; */
-        /* border: 1px solid black; */
+        background-color: blueviolet;
+        border: 1px solid black; 
         grid-area: header;
         
     }
 
     div {
-        /* border: 1px solid black; */
+        border: 1px solid black; 
         grid-area: div;
     }
 
     nav {
         overflow: hidden;
-        /* background-color: red; */
-        /* border: 1px solid black; */
+        background-color: red;
+        border: 1px solid black;
         grid-area: nav;
     }
     nav a {
@@ -49,59 +50,68 @@
       }
 
     main {
-        /* background-color: yellow; */
-        /* border: 1px solid black; */
+        background-color: yellow; 
+        border: 1px solid black; 
         grid-area: main;
     }
 
     aside {
-        /* background-color: green; */
-        /* border: 1px solid black; */
+        background-color: green; 
+        border: 1px solid black; 
         grid-area: aside;
     }
 
     footer {
-        /* background-color:peru; */
-        /* border: 1px solid black; */
+        background-color:peru; 
+       border: 1px solid black; 
         grid-area: footer;
-    }
+    } 
+} */
+.nav-menu{
+    width: 100%;
 }
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menuDesk a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menuDesk a:hover {
+    background-color: #575757;
+}
+
 .dropbtn{
     cursor: pointer;
 }
 
 .dropdown {
     float: left;
-    overflow: hidden;
+    display: none;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #575757;
-    /* min-width: 160px; */
-}
-.dropdown .dropbtn {
-    font-size: 16px;  
+.dropbtn {
     border: none;
-    outline: none;
+    cursor: pointer;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit;
-    margin: 0;
   }
   
 .drop-content {
     display: none;
     position: absolute;
     background-color: #575757;
-    /* min-width: 160px; */
-
+    min-width: 160px;
+    z-index: 1;
 }
 
 .drop-content a {
-    float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -115,4 +125,16 @@
 
 .dropdown:hover .drop-content {
     display: block;
+}
+
+@media screen and (max-width: 600px) {
+
+    .menuDesk {
+        display: none;
+    }
+    
+
+    .dropdown {
+        display: inline-block;
+    }
 }

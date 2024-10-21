@@ -436,7 +436,7 @@ td {
     }
 }
 
-header {
+.headerHome {
     animation: slideDown 1.5s ease-out;
 }
 
@@ -449,7 +449,7 @@ header {
     }
 }
 
-footer p {
+.footerHome p {
     animation: footerFadeIn 2s ease-out;
-    opacity: 0;
+    /* opacity: 0; */
 }
