@@ -122,6 +122,8 @@ a {
     padding-bottom: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
+    text-align: left;
+    
 }
 
 #fotografias p {
@@ -133,6 +135,7 @@ a {
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
+    text-align: center;
 }
 
 #video {
@@ -184,6 +187,12 @@ input {
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
+}
+.location-map iframe{
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-top: 17px;
+    
 }
 
 .main-header {
@@ -403,6 +412,7 @@ td {
 
 .fotografias-content a {
     cursor: zoom-in;
+    
 }
 
 .content-video {
