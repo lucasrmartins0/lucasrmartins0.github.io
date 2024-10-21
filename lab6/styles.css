@@ -191,8 +191,11 @@ input {
 .location-map iframe{
     border: 2px solid black;
     border-radius: 8px;
-    margin-top: 17px;
-    
+    display: block;
+    margin: 0 auto;
+}
+.location-map p {
+    margin-bottom: 20px;
 }
 
 .main-header {
