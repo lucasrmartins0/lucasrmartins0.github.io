@@ -5,7 +5,7 @@
 }
 
 
-/* @media (min-width:601px) {
+@media (min-width:601px) {
     body {
         overflow-x: hidden;
         display: grid;
@@ -24,21 +24,21 @@
     }
 
     header {
-        background-color: blueviolet;
-        border: 1px solid black; 
+        /* background-color: blueviolet;
+        border: 1px solid black;  */
         grid-area: header;
         
     }
 
     div {
-        border: 1px solid black; 
+        /* border: 1px solid black;  */
         grid-area: div;
     }
 
     nav {
-        overflow: hidden;
-        background-color: red;
-        border: 1px solid black;
+        /* overflow: hidden; */
+        /* background-color: red; */
+        /* border: 1px solid black; */
         grid-area: nav;
     }
     nav a {
@@ -50,23 +50,24 @@
       }
 
     main {
-        background-color: yellow; 
-        border: 1px solid black; 
+        /* background-color: yellow;  */
+        /* border: 1px solid black;  */
         grid-area: main;
     }
 
     aside {
-        background-color: green; 
-        border: 1px solid black; 
+        /* background-color: green;  */
+        /* border: 1px solid black;  */
         grid-area: aside;
     }
 
     footer {
-        background-color:peru; 
-       border: 1px solid black; 
+        /* background-color:peru;  */
+       /* border: 1px solid black;  */
         grid-area: footer;
     } 
-} */
+}
+
 .nav-menu{
     width: 100%;
 }
