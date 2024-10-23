@@ -1,0 +1,65 @@
+.slider {
+    
+    position: relative;
+    max-width: 600px; 
+    margin: auto; 
+    overflow: hidden; 
+    border: 2px solid #ddd; 
+    border-radius: 10px;
+}
+
+input[type="radio"] {
+    display: none;  /*Tira os botoes de cima */
+}
+
+.slides {
+    display: flex; 
+    transition: transform 0.5s ease; 
+}
+
+.slide {
+    min-width: 100%; 
+}
+
+img {
+    width: 100%; 
+    border-radius: 7px;
+}
+
+.navigation {
+    text-align: center; 
+    padding: 10px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; 
+}
+
+/* quando o slide1 esta 'checked' o .slide é movido para o lado  , e o mesmo para o slide2 e slide 3 andam -100% e -200%*/
+/* ~ é usado para aplicar estilos à classe .slides que são irmãos do input#slide1 */
+
+input#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+input#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+input#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+input#slide1:checked ~ .navigation .dot:nth-child(1),
+input#slide2:checked ~ .navigation .dot:nth-child(2),
+input#slide3:checked ~ .navigation .dot:nth-child(3) {
+    background-color: #717171; 
+    /* quando um dos pontos estiver selecionado fica com o cinzento mais escuro e os outros mais claros */
+}
