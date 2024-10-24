@@ -1,20 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resposivea.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página com Grid</title>
+  <style>
+    body {
+      margin: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header header "
+        "main main main"
+        "aside nav nav"
+        "footer footer footer";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      height: 100vh;
+      gap: 10px;
+    }
+
+    header {
+      border-radius: 10px;
+      text-align: center;
+      grid-area: header;
+      background-color: #d6cfcf;
+    }
+
+    nav {
+      border-radius: 10px;
+      grid-area: nav;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      gap: 10px;
+    }
+
+    nav li {
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+
+    nav li:nth-child(odd) {
+      background-color: #898a89;
+    }
+
+    nav li:nth-child(even) {
+      background-color: #e7e7e8;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    main {
+      padding: 10px;
+      border-radius: 10px;
+      grid-area: main;
+      background-color: #ddd;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    main ul {
+      list-style-type: none;
+    }
+
+    aside {
+      border-radius: 10px;
+      grid-area: aside;
+      background-color: #f4f4f4;
+    }
+
+    footer {
+      grid-area: footer;
+      border-radius: 10px;
+      background-color: #d6cfcf;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .container {
+        grid-template-areas:
+          "header"
+          "main"
+          "aside"
+          "nav"
+          "footer"; 
+        grid-template-columns: 1fr; 
+      }
+
+      
+    }
+
+    @media (max-width: 480px) {
+      body {
+        margin: 5px; 
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>header</header>
-    <main>main</main>
-    <div>div</div>
-    <nav>nav</nav>
-    <aside>aside</aside>
-    <footer>footer</footer>
+
+  <div class="container">
+    <header>
+      <h1>Lucas Martins</h1>
+    </header>
+
+    <nav>
+      <h3>Laboratórios</h3>
+      <ul>
+        <li><a href=""></a>Lab1</li>
+        <li><a href=""></a>Lab2</li>
+        <li><a href=""></a>Lab3</li>
+        <li><a href=""></a>Lab4</li>
+        <li><a href=""></a>Lab5</li>
+        <li><a href=""></a>Lab6</li>
+      </ul>
+    </nav>
+
+    <main>
+      
+      <ul>
+        <h3>Interfaces Web</h3>
+        <li>HTML é raiz</li>
+        <li>CSS a cor</li>
+        <li>JavaScript a magia</li>
+        <li>Dum site em flor</li>
+      </ul>
+    </main>
+
+    <aside>
+      <ul>
+        <h3>Introdução</h3>
+        <h4>Vamos aprender sobre:</h4>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScripit</li>
+
+      </ul>
+    </aside>
+
+    <footer>
+      <p>2024 - Licenciatura em Enganharia Informática</p>
+    </footer>
+  </div>
+
 </body>
 
 </html>
