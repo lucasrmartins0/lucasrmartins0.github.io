@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="eventos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Landing Page</a></li>
+                <li><a href="index.html">Primeira Página JavaScript</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Future</h1>
+
+    <img id="futureimg" src="images/future.jpg" alt="Future" width="300">
+
+    <div class="divalbums" >
+        <h2>Albums</h2>
+        <ul class="albums">
+            <li>
+                <img src="images/ds2.jpg" alt="ds2" height="150" width="150">
+                <h3>DS2</h3>
+            </li>
+            <li>
+                <img src="images/hol.jpg" alt="hol" height="150" width="150">
+                <h3>High Of Life</h3>
+            </li>
+            <li>
+                <img src="images/Future-Mixtape-Pluto.jpg" alt="mpl" height="150" width="150">
+                <h3>Mixtape Pluto</h3>
+            </li>
+        </ul>
+    </div>
+    <script>
+        //EVENTO DO FUTURE
+
+        const passarPCima = document.querySelector('h1')
+        const textoOriginal = passarPCima.textContent;
+
+        function mudaTexto() {
+            passarPCima.textContent = 'FUTURE'
+        }
+        function voltaTexto() {
+            passarPCima.textContent = textoOriginal;
+        }
+        passarPCima.addEventListener('mouseover', mudaTexto);
+        passarPCima.addEventListener('mouseout', voltaTexto);
+
+
+        //EVENTO DO BG 
+        const colors = ["#f0f0f0", "#e0f7fa", "#ffeb3b", "#ffcdd2", "#c8e6c9"];
+        const mainImage = document.querySelector('#futureimg');
+        let colorIndex = 0;
+
+        function changeBackgroundColor() {
+            colorIndex = (colorIndex + 1) % colors.length;
+            document.body.style.backgroundColor = colors[colorIndex];
+        }
+
+        mainImage.addEventListener('click', changeBackgroundColor);
+
+
+    </script>
+</body>
+
+</html>
