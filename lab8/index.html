@@ -37,9 +37,9 @@
         <p class="passar">1. Passa por aqui!</p> 
 
         <p id="texto">2. Pinta-me!
-            <button onclick="mudarCor('red')">Red</button>
-            <button onclick="mudarCor('blue')">Blue</button>
-            <button onclick="mudarCor('green')">Green</button>
+            <button data-color="red">Red</button>
+            <button data-color="green">Blue</button>
+            <button data-color="blue">Green</button>
         </p>
 
         <p>
@@ -48,35 +48,41 @@
         </p>
 
         <p>
-            <label for="cor">4.Escolha uma cor em inglês</label>
-            <input type="text" name="cor" id="cor"> <button id="submitbtn">Submeter</button>
+            <label for="cor">4.Escolha uma cor :</label>
+            <select name="cor" id="cor">
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+                <option value="Black">Black</option>
+            </select>
         </p>
 
         <p class="conta">5. Conta: <span id="contador">0</span>
             <button id="incrementar">+</button> <button id="decrementar">-</button>
         </p>
 
-        <p>6.
-            <label for="nome">Nome: </label>
-            <select id="nomee">
-                <option value="Chief Keef">Chief Keef</option>
-                <option value="Elon Musk">Elon Musk</option>
-                <option value="Trump">Trump</option>
-                <option value="Ronaldo">Ronaldo</option>
-            </select>
+        <p>
+            6.<form id="formulario">
+                <label for="nome">Nome: </label>
+                <select id="nomee">
+                    <option value="Chief Keef">Chief Keef</option>
+                    <option value="Elon Musk">Elon Musk</option>
+                    <option value="Trump">Trump</option>
+                    <option value="Ronaldo">Ronaldo</option>
+                </select>
         
-            <label for="idade">Idade: </label>
-            <select id="idadee">
-                <option value="300">300</option>
-                <option value="25">25</option>
-                <option value="30">30</option>
-                <option value="35">35</option>
-            </select>
+                <label for="idade">Idade: </label>
+                <select id="idadee">
+                    <option value="300">300</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                </select>
         
-            <button id="BotaoSubmeter">Submit</button>
+                <button id="BotaoSubmeter" type="submit">Submit</button>
+            </form>
+        
+            <p id="mensagem"></p>
         </p>
-        
-        <p id="mensagem"></p>
 
         <p>
             7. Automatic Counter: <span id="contador7" >0</span>

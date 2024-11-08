@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="light-effect"></div>
     <header>
         <nav>
             <ul>
@@ -18,31 +19,33 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="main-div">
+            <h1>Future</h1>
 
-    <h1>Future</h1>
+            <img id="futureimg" src="images/future.jpg" alt="Future" width="300">
 
-    <img id="futureimg" src="images/future.jpg" alt="Future" width="300">
-
-    <div class="divalbums" >
-        <h2>Albums</h2>
-        <ul class="albums">
-            <li>
-                <img src="images/ds2.jpg" alt="ds2" height="150" width="150">
-                <h3>DS2</h3>
-            </li>
-            <li>
-                <img src="images/hol.jpg" alt="hol" height="150" width="150">
-                <h3>High Of Life</h3>
-            </li>
-            <li>
-                <img src="images/Future-Mixtape-Pluto.jpg" alt="mpl" height="150" width="150">
-                <h3>Mixtape Pluto</h3>
-            </li>
-        </ul>
-    </div>
+            <div class="divalbums">
+                <h2>Albums</h2>
+                <ul class="albums">
+                    <li>
+                        <img class="album-img"  src="images/ds2.jpg" alt="ds2" height="150" width="150">
+                        <h3>DS2</h3>
+                    </li>
+                    <li>
+                        <img class="album-img"  src="images/hol.jpg" alt="hol" height="150" width="150">
+                        <h3>High Of Life</h3>
+                    </li>
+                    <li>
+                        <img class="album-img"  src="images/Future-Mixtape-Pluto.jpg" alt="mpl" height="150" width="150">
+                        <h3>Mixtape Pluto</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
     <script>
         //EVENTO DO FUTURE
-
         const passarPCima = document.querySelector('h1')
         const textoOriginal = passarPCima.textContent;
 
@@ -56,7 +59,7 @@
         passarPCima.addEventListener('mouseout', voltaTexto);
 
 
-        //EVENTO DO BG 
+        //EVENTO DO BG (click)
         const colors = ["#f0f0f0", "#e0f7fa", "#ffeb3b", "#ffcdd2", "#c8e6c9"];
         const mainImage = document.querySelector('#futureimg');
         let colorIndex = 0;
@@ -68,6 +71,46 @@
 
         mainImage.addEventListener('click', changeBackgroundColor);
 
+
+        // EVENTO LUZ(mousemove e doublecick)
+
+        const lightEffect = document.querySelector('.light-effect');
+
+        let lightActive = false;
+
+        document.addEventListener('dblclick', () => {
+            lightActive = !lightActive;
+
+            lightEffect.style.display = lightActive ? 'block' : 'none';
+        });
+
+        // Atualizar a posição da luz
+        document.addEventListener('mousemove', (e) => {
+            if (lightActive) {
+                // Calcula a posição do rato
+                const x = (e.pageX / window.innerWidth) * 100;
+                const y = (e.pageY / window.innerHeight) * 100;
+
+                lightEffect.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(255, 255, 255, 0.4), transparent 60%)`;
+            }
+        });
+
+        //EVENTO DE ZOOM
+        const albumImages = document.querySelectorAll('.album-img');
+
+        // Evento keydown para ativar o zoom ao pressionar a tecla "Z"
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'z' || e.key === 'Z') {
+                albumImages.forEach(img => img.classList.add('zoom')); // Adiciona a classe de zoom a cada imagem do álbum
+            }
+        });
+
+        // Evento keyup para desativar o zoom ao soltar a tecla "Z"
+        document.addEventListener('keyup', (e) => {
+            if (e.key === 'z' || e.key === 'Z') {
+                albumImages.forEach(img => img.classList.remove('zoom')); // Remove a classe de zoom de cada imagem do álbum
+            }
+        });
 
     </script>
 </body>
