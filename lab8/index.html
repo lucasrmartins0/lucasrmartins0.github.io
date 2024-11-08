@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Introdução JS</title>
+</head>
+<style>
+    body {
+        /* margin: 0;
+        padding: 0; */
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Landing Page</a></li>
+                <li><a href="index.html">Primeira Página JavaScript</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Primeira pagina com JavaScript</h1>
+        </div>
+        <p class="passar">1. Passa por aqui!</p> 
+
+        <p id="texto">2. Pinta-me!
+            <button onclick="mudarCor('red')">Red</button>
+            <button onclick="mudarCor('blue')">Blue</button>
+            <button onclick="mudarCor('green')">Green</button>
+        </p>
+
+        <p>
+            <label for="escrever">3. Experimenta escrever</label>
+            <input type="text" id="escrever" name="escrever">
+        </p>
+
+        <p>
+            <label for="cor">4.Escolha uma cor em inglês</label>
+            <input type="text" name="cor" id="cor"> <button id="submitbtn">Submeter</button>
+        </p>
+
+        <p class="conta">5. Conta: <span id="contador">0</span>
+            <button id="incrementar">+</button> <button id="decrementar">-</button>
+        </p>
+
+        <p>6.
+            <label for="nome">Nome: </label>
+            <select id="nomee">
+                <option value="Chief Keef">Chief Keef</option>
+                <option value="Elon Musk">Elon Musk</option>
+                <option value="Trump">Trump</option>
+                <option value="Ronaldo">Ronaldo</option>
+            </select>
+        
+            <label for="idade">Idade: </label>
+            <select id="idadee">
+                <option value="300">300</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                <option value="35">35</option>
+            </select>
+        
+            <button id="BotaoSubmeter">Submit</button>
+        </p>
+        
+        <p id="mensagem"></p>
+
+        <p>
+            7. Automatic Counter: <span id="contador7" >0</span>
+        </p>
+
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
