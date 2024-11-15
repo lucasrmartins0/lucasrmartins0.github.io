@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    position: relative;
+    height: 100vh;
+    /* padding: 10px;
+    margin: 10px; */
+}
+
+header {
+    position: fixed;
+    background-color: #22577a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    cursor: pointer;
+}
+
+main {
+    padding-top: 57px ; /*VALOR EXATO PARA O MAIN FICAR ALINHADO COM O HEADER*/
+    /* padding: 10px 20px; */
+    /* margin-top: 2px; */
+}
+
+#produtos{
+    background-color: #80ed99;
+    height: 20vw;
+    padding: 50px;
+}
+
+#cesto{
+    background-color: #57cc99;
+    padding: 50px;
+    height: 20vw;
+}
+
+footer {
+    background-color: #22577a;
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+}
