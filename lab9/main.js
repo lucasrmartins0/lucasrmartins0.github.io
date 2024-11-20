@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     produtos.forEach(produto => {
 
         const article = document.createElement('article');
-        article.classList.add('produto'); 
+        article.classList.add('produto');
 
         const titulo = document.createElement('h3');
         titulo.textContent = produto.title;
@@ -26,4 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         listaProdutos.append(article);
     });
-}); 
+});
+
+
+// const listaProdutos = document.querySelector("#produtos");
+// document.addEventListener('DOMContentLoaded', () => {
+
+//     const titulo = document.createElement('h1');
+
+//     titulo.textContent = "TEste";
+
+//     const body = document.querySelector('body');
+
+//     body.append(titulo);
+// }); 
