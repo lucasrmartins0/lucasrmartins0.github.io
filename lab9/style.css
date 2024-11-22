@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: white;
     position: relative;
     height: 100vh;
-    /* padding: 10px;
-    margin: 10px; */
 }
 
 header {
@@ -39,21 +40,83 @@ header nav ul li {
 }
 
 main {
-    padding-top: 57px ; /*VALOR EXATO PARA O MAIN FICAR ALINHADO COM O HEADER*/
-    /* padding: 10px 20px; */
-    /* margin-top: 2px; */
+    padding-top: 57px; /* Espaço para que o main não fique coberto pelo header */
 }
 
-#produtos{
-    background-color: #80ed99;
-    height: 20vw;
-    padding: 50px;
+#produtos {
+    background-color: whitesmoke;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para os produtos */
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
 }
 
-#cesto{
+#produtos h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 1 / -1; /* Faz o título ocupar toda a largura da grade */
+    margin-bottom: 20px; /* Espaço entre o título e os produtos */
+}
+
+/* Produtos */
+.produto {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0.8em;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px; /* Tamanho fixo para as caixas de produto */
+    margin: 0 auto;
+}
+
+.produto img {
+    max-width: 100%; 
+    height: 150px;
+    width: 100px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.produto h3 {
+    font-size: 1.1em; 
+    color: #333;
+    margin-bottom: 0.3em;
+}
+
+.produto p {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+.produto button {
+    margin-top: auto;
+    padding: 0.3em 0.8em;
+    background-color: #38A3A5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.produto button:hover {
+    background-color: #0056b3;
+}
+
+/* Cesto */
+#cesto {
     background-color: #57cc99;
     padding: 50px;
-    height: 20vw;
+    padding-bottom: 50px;
 }
 
 footer {
@@ -62,4 +125,57 @@ footer {
     padding: 10px 20px;
     position: fixed;
     bottom: 0;
+}
+
+/* Lista do Cesto */
+#lista-cesto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para o cesto também */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#lista-cesto li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#lista-cesto img {
+    max-width: 100%; /* Ajusta a largura da imagem no cesto */
+    height: 150px; /* Mantém a altura das imagens consistente */
+    width: 100px; /* Ajuste do tamanho das imagens no cesto */
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#lista-cesto h3 {
+    font-size: 1.1em; /* Mesmo tamanho de título que os produtos */
+    color: #333;
+    margin-bottom: 0.3em;
+}
+
+#lista-cesto p {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+#lista-cesto button {
+    background-color: #22577a;
+    color: white;
+    border: none;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lista-cesto button:hover {
+    background-color: #38A3A5;
 }

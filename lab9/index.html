@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Página Principal</title>
+    <title>Loja</title>
 </head>
 
 <body>
@@ -13,8 +13,8 @@
         <h1>Loja</h1>
         <nav>
             <ul>
-                <li>Produtos</li>
-                <li>Cesto</li>
+                <li><a href="#produtos"></a>Produtos</li>
+                <li><a href="#cesto"></a>Cesto</li>
             </ul>
         </nav>
     </header>
@@ -24,16 +24,16 @@
             <h3>Selecione os seus produtos</h3>
         </section>
 
-        <section id="cesto" >
+        <section id="cesto">
             <h3>Produtos Selecionados</h3>
-            <h3>Custo Total: </h3>
+            <ul id="lista-cesto"></ul>
         </section>
     </main>
 
     <footer>2024</footer>
 
-    <script type="module" src="main.js" ></script>     
-    <script type="module" src="produtos.js" ></script> 
+    <script src="produtos.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
