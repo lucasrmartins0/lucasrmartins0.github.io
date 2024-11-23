@@ -3,7 +3,7 @@ const listaCesto = document.querySelector("#lista-cesto");
 let produtosNoCesto = JSON.parse(localStorage.getItem("cesto")) || []; 
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Renderiza os produtos
+
     produtos.forEach(produto => {
         const article = document.createElement('article');
         article.classList.add('produto');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         listaProdutos.append(article);
     });
 
-    atualizarCarrinho();
+    atualizaCesto();
 
     function adicionarAoCesto(produto) {
         const produtoCompleto = {
@@ -44,10 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         localStorage.setItem("cesto", JSON.stringify(produtosNoCesto));
         
-        atualizarCarrinho();
+        atualizaCesto();
     }
 
-    function atualizarCarrinho() {
+    function atualizaCesto() {
         listaCesto.innerHTML = "";
 
         let custoTotal = 0;
@@ -89,6 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         localStorage.setItem("cesto", JSON.stringify(produtosNoCesto));
 
-        atualizarCarrinho();
+        atualizaCesto();
     }
 });
