@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DEISI Loja</title>
+</head>
+
+<body>
+    <header>
+        <h1>Loja</h1>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#cesto">Cesto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="filtros">
+            <section>
+                <label for="categorias-filtros">Filtrar</label>
+                <select id="categorias-filtros">
+                    <option value="">Todas as categorias</option>
+                </select>
+
+                <label for="ordenar-por-preço">Ordenar</label>
+                <select id="ordenar-por-preco">
+                    <option value="none">Ordenar por preço</option>
+                    <option value="asc">Crescente</option>
+                    <option value="desc">Decrescente</option>
+                </select>
+
+                <label for="pesquisar-produto">Procurar</label>
+                <input type="text" id="pesquisar-produto" />
+            </section>
+        </section>
+
+
+        <section id="produtos">
+            <h3>Selecione os seus produtos</h3>
+        </section>
+
+        <section id="cesto">
+            <h3>Produtos Selecionados</h3>
+            <ul id="lista-cesto"></ul>
+        </section>
+
+        <section id="comprar">
+            <p id="preço-final"></p>
+            <label>
+                <input type="checkbox" id="estudante DEISI">És estudante do DEISI?
+            </label>
+            <input type="text" id="cupao" placeholder="Cupão de desconto">
+            <button id="comprar-btn">Comprar</button>
+            <section id="valor-a-comprar" role="status"></section>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 All Rights Reserved</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
