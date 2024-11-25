@@ -1,5 +1,3 @@
-//----------------------(((((((API)))))))---------------
-
 let produtosOriginais = [];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -16,14 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Erro ao obter categorias:", err);
         });
 
-    getProdutos()
+    getProdutos() 
         .then(produtos => {
             produtosOriginais = [...produtos];
             loadProdutos(produtos);
         })
         .catch(err => {
             console.error("Erro ao obter produtos:", err);
-            document.getElementById('produtos').innerHTML +=
+            document.getElementById('produtos').innerHTML += 
                 "<p>Erro ao carregar produtos. Por favor, tente novamente mais tarde.</p>";
         });
 
@@ -144,7 +142,7 @@ function filtrarProdutosPorCategoria(categoriaSelecionada) {
     if (categoriaSelecionada === "") {
         produtosFiltrados = produtosOriginais;
     } else {
-        produtosFiltrados = produtosOriginais.filter(produto =>
+        produtosFiltrados = produtosOriginais.filter(produto => 
             produto.category === categoriaSelecionada.trim()
         );
     }
@@ -197,11 +195,8 @@ function renderizarCesto() {
     const cesto = JSON.parse(localStorage.getItem('cesto')) || [];
     cesto.forEach((produto, index) => {
         const itemCesto = document.createElement('li');
+        itemCesto.classList.add('cesto-item'); // Aplicar estilos via CSS
 
-        itemCesto.classList.add('item-cesto');
-
-
-        // Imagem do produto
         const imagemProduto = document.createElement('img');
         imagemProduto.src = produto.image;
         imagemProduto.alt = produto.title;
@@ -210,8 +205,8 @@ function renderizarCesto() {
         textoProduto.textContent = `${produto.title} - €${produto.price}`;
 
         const removeBtn = document.createElement('button');
-        removeBtn.classList.add('btn-remover');
         removeBtn.textContent = "Remover";
+        removeBtn.classList.add('btn-remove'); // Aplicar estilos via CSS
         removeBtn.onclick = () => removerDoCesto(index);
 
         itemCesto.appendChild(imagemProduto);
@@ -273,4 +268,4 @@ async function finalizarCompra() {
         document.getElementById('valor-a-comprar').textContent =
             `Erro: ${erro.message}`;
     }
-}
+}    
