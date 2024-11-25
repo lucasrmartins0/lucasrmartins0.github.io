@@ -43,17 +43,24 @@ header nav ul li a{
     cursor: pointer;
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover{
+    cursor: pointer;
+    color: #38A3A5;
+    text-decoration: none;
 }
 
 main {
-    padding-top: 57px; /* Espaço para que o main não fique coberto pelo header */
+    padding-top: 57px; 
 }
 
 #produtos {
     background-color: whitesmoke;
     padding: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas para os produtos */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     justify-content: center;
     text-align: center;
