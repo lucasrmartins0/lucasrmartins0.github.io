@@ -1,13 +1,17 @@
 * {
+    
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 html {
+    height: 100%;
     scroll-behavior: smooth;
 }
 
 body {
+    height: 100%;
+    background: linear-gradient(to bottom, white, #7d5df2);
     background-color: white;
     position: relative;
     height: 100vh;
@@ -15,11 +19,11 @@ body {
 
 header {
     position: fixed;
-    background-color: #22577a;
+    background-color: #723ee7;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
     width: 100%;
     box-sizing: border-box;
     color: white;
@@ -54,7 +58,8 @@ header nav ul li a:hover{
 }
 
 main {
-    padding-top: 57px;
+    /* background-color: whitesmoke; */
+    padding-top: 60px;
     padding-bottom: 57px;
 }
 
@@ -67,11 +72,13 @@ main h2 {
 }
 
 #produtos {
-    background-color: whitesmoke;
+    /* background: linear-gradient(to bottom,#53c8ef, white ); */
+    /* background-image: url(images/dirk-lach-fSgF4pEQEY8-unsplash.jpg); */
+    /* background-color: whitesmoke; */
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     text-align: center;
 }
@@ -98,6 +105,11 @@ main h2 {
     justify-content: space-between;
     width: 300px;
     margin: 0 auto;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.produto:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .produto img {
@@ -129,15 +141,17 @@ main h2 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 0.9em;
+    transition: background-color 0.3s ease;
 }
 
 .produto button:hover {
-    background-color: #0056b3;
+    background-color: #2c7c8a;
 }
 
 /* Cesto */
 #cesto {
-    background-color: #57cc99;
+    /* background: linear-gradient(to bottom, white, #ADD8E6); */
+    /* background-color: #858ae3; */
     padding: 40px;
     padding-bottom: 50px;
     display: flex;
@@ -147,7 +161,7 @@ main h2 {
 }
 
 footer {
-    background-color: #22577a;
+    background-color: #723ee7;
     width: 100%;
     padding: 20px 20px;
     position: fixed;
@@ -200,7 +214,7 @@ footer {
 }
 
 #lista-cesto button {
-    background-color: #22577a;
+    background-color: #5e60ce;
     color: white;
     border: none;
     padding: 0.3em 0.8em;
@@ -220,7 +234,7 @@ footer {
     background-color: white; 
     padding: 20px 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 600px;
     font-family: Arial, sans-serif;
     margin: 20px auto;
@@ -253,7 +267,7 @@ footer {
 }
 
 #comprar input[type="text"]:focus {
-    border-color: #22577a;
+    border-color: #5e60ce;
     outline: none;
 }
 
@@ -269,7 +283,7 @@ footer {
 }
 
 #comprar button:hover {
-    background-color: #0056b3; 
+    background-color: #2c7c8a; 
 }
 
 #valor-a-comprar {
@@ -323,10 +337,10 @@ footer {
 #filtros input[type="text"]:hover,
 #filtros select:focus,
 #filtros input[type="text"]:focus {
-    border-color: #22577a;
+    border-color: #5e60ce;
     outline: none;
 }
 
 #filtros select {
     cursor: pointer;
-}
+} 
