@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const botaoRemoverTodos = document.getElementById("remover-todos-btn");
     const toggleDescricao = document.getElementById("toggle-descricao-btn");
 
-    toggleDescricao.addEventListener("click", toggleDescricao);
+    toggleDescricao.addEventListener("click", toggleDescricoes);
     botaoRemoverTodos.addEventListener("click" , removerTodosDoCesto);
 
 
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderizarCesto();
 });
 
-function toggleDescricao(){
+function toggleDescricoes(){
     const descricoes = document.querySelectorAll(".produto p");
     const btn = document.getElementById("toggle-descricao-btn");
 
