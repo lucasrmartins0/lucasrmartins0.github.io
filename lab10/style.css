@@ -19,7 +19,7 @@ body {
 
 header {
     position: fixed;
-    background-color: #723ee7;
+    background-color: #1b7eff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,7 +160,7 @@ main h2 {
 }
 
 footer {
-    background-color: #723ee7;
+    background-color: #1b7eff;
     width: 100%;
     padding: 20px 20px;
     position: fixed;
